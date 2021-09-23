@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Navbar = ({ props: { icon, title } }) => {
+const Navbar = ({ icon, title }) => {
   return (
     <div>
       <nav className='navbar bg-primary'>
