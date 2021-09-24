@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom';
 const UserItem = ({ user: { avatar_url, login } }) => {
   return (
     <div className='card text-center'>
-      <img src={avatar_url} className='round-img' style={{ width: '60px' }} />
+      <img
+        src={avatar_url}
+        className='round-img'
+        alt={login}
+        style={{ width: '60px' }}
+      />
       <h3>{login}</h3>
       <div>
         <Link className='btn btn-dark btn-sm my-1' to={`/user/${login}`}>
